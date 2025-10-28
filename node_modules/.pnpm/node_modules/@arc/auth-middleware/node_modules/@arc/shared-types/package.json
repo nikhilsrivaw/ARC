@@ -1,0 +1,16 @@
+ {
+    "name": "@arc/shared-types",
+    "version": "1.0.0",
+    "description": "Shared TypeScript types for Arc",
+    "private": true,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+      "build": "tsc",
+      "dev": "tsc --watch"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "^5.2.0"
+    }
+  }
