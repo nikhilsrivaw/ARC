@@ -1,0 +1,25 @@
+ {
+    "name": "arc",
+    "version": "1.0.0",
+    "description": "Multi-tenant SaaS microservices platform for team collaboration",
+    "private": true,
+    "scripts": {
+      "dev": "turbo run dev",
+      "build": "turbo run build",
+      "test": "turbo run test",
+      "lint": "turbo run lint"
+    },
+    "devDependencies": {
+      "@types/node": "^20.0.0",
+      "@typescript-eslint/eslint-plugin": "^6.0.0",
+      "@typescript-eslint/parser": "^6.0.0",
+      "eslint": "^8.50.0",
+      "prettier": "^3.0.0",
+      "typescript": "^5.2.0",
+      "turbo": "^2.0.0"
+    },
+    "workspaces": [
+      "apps/*",
+      "packages/*"
+    ]
+  }

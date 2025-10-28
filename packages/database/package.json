@@ -1,0 +1,22 @@
+  {
+    "name": "@arc/database",
+    "version": "1.0.0",
+    "description": "Multi-tenant database connection pool for Arc",
+    "private": true,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+      "build": "tsc",
+      "dev": "tsc --watch"
+    },
+    "dependencies": {
+      "pg": "^8.10.0",
+      "@arc/shared-types": "workspace:*",
+      "@arc/logger": "workspace:*"
+    },
+    "devDependencies": {
+      "@types/node": "^20.0.0",
+      "@types/pg": "^8.10.0",
+      "typescript": "^5.2.0"
+    }
+  }
