@@ -1,0 +1,27 @@
+{
+    "name": "@arc/api-gateway",
+    "version": "1.0.0",
+    "description": "API Gateway for Arc microservices",
+    "private": true,
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "dev": "ts-node src/index.ts",
+      "start": "node dist/index.js"
+    },
+    "dependencies": {
+      "express": "^4.18.0",
+      "express-rate-limit": "^7.1.0",
+      "axios": "^1.6.0",
+      "@arc/shared-types": "workspace:*",
+      "@arc/logger": "workspace:*",
+      "@arc/auth-middleware": "workspace:*",
+      "@arc/constants": "workspace:*"
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.0",
+      "@types/node": "^20.0.0",
+      "typescript": "^5.2.0",
+      "ts-node": "^10.9.0"
+    }
+  }

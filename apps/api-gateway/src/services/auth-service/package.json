@@ -1,0 +1,31 @@
+{
+    "name": "@arc/auth-service",
+    "version": "1.0.0",
+    "description": "Authentication service for Arc",
+    "private": true,
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "dev": "ts-node src/index.ts",
+      "start": "node dist/index.js"
+    },
+    "dependencies": {
+      "express": "^4.18.0",
+      "bcrypt": "^5.1.0",
+      "jsonwebtoken": "^9.0.2",
+      "uuid": "^9.0.0",
+      "@arc/database": "workspace:*",
+      "@arc/logger": "workspace:*",
+      "@arc/shared-types": "workspace:*",
+      "@arc/shared-utils": "workspace:*",
+      "@arc/constants": "workspace:*"
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.0",
+      "@types/bcrypt": "^5.0.0",
+      "@types/jsonwebtoken": "^9.0.0",
+      "@types/node": "^20.0.0",
+      "typescript": "^5.2.0",
+      "ts-node": "^10.9.0"
+    }
+  }
