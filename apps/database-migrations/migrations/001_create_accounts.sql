@@ -1,0 +1,14 @@
+CREATE TABLE accounts(
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    email VARCHAR(300) NOT NULL UNIQUE ,
+    name VARCHAR(300) NOT NULL,
+    hash_password VARCHAR(300) NOT NULL,
+    firstName VARCHAR(300) NOT NULL,
+    lastName VARCHAR(300) NOT NULL,
+    status VARCHAR(50) NOT NULL DEFAULT 'active',
+    emailVerified BOOLEAN DEFAULT false,
+    createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+
+);

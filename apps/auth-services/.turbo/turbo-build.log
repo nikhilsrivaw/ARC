@@ -1,0 +1,8 @@
+
+> @arc/auth-service@1.0.0 build C:\Users\nikhil\Desktop\arc\apps\auth-services
+> tsc
+
+error TS2688: Cannot find type definition file for 'bcryptjs'.
+  The file is in the program because:
+    Entry point for implicit type library 'bcryptjs'
+ ELIFECYCLE  Command failed with exit code 2.

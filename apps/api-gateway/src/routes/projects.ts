@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express';
 import axios from 'axios';
 import Logger from '@arc/logger';
 
-const router = Router();
+const router:Router = Router();
 
 const logger = new Logger({
     serviceName: 'api-gateway',
@@ -56,3 +56,5 @@ router.post('/', async (req: Request, res: Response) => {
         });
     }
 })
+
+export default router;

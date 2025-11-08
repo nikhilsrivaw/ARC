@@ -3,7 +3,7 @@ import axios from 'axios';
 import Logger from '@arc/logger';
 import { LoginRequest, RegisterRequest } from '@arc/shared-types';
 
-const router = Router();
+const router: Router = Router();
 const logger = new Logger({
     serviceName: 'api-gateway',
     logLevel: "DEBUG",
@@ -47,7 +47,7 @@ router.post('/login', async (req: Request, res: Response) => {
         res.status(200).json(response.data);
     } catch (error: any) {
         logger.error('Login failed ', { error: error.message });
-        req.status(error.response?.status || 500).json({
+        res.status(error.response?.status || 500).json({
             success: false,
             error: {
                 code: 'LOGIN_FAILED',

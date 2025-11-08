@@ -1,10 +1,11 @@
 import rateLimit from 'express-rate-limit';
 import Logger from '@arc/logger';
+
   import { Request, Response } from 'express';
 
 const logger = new Logger({
     serviceName : 'api-gateway',
-    logLevel: " DEBUG",
+    logLevel: "DEBUG",
     enableConsole : true,
     enableFile : false,
 });
@@ -18,7 +19,7 @@ export const limiter =  rateLimit({
      windowMs: 15 * 60 * 1000,
      max: 100,
      message : " Too many requests fromt his IP , pelase try again later",
-     standardheaders : true,
+     standardHeaders : true,
      legacyHeaders: false,
      skip: (req: Request)=>{
         // don't rate limit the helath api 
@@ -34,7 +35,7 @@ export const limiter =  rateLimit({
          res.status(429).json({
             success: false, 
             error:{
-                code: 'TOO_MANY)REQUESTS',
+                code: 'TOO_MANY_REQUESTS',
                 message: 'Too many requests, please try again later.',
             }
          })
