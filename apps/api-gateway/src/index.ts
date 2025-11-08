@@ -3,7 +3,7 @@ import Logger from '@arc/logger';
 
 const logger = new Logger({
     serviceName : 'api-gateway',
-    logLevel: process.env.LOG_LEVEL || 'DEBUG',
+    logLevel:'DEBUG',
     enableConsole: true,
     enableFile : false,
 });

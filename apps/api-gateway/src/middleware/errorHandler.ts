@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import Logger from '@arc/logger';
-import {AppError} from '@arc/shared-utils'
+import {AppError} from '@arc/shared-utils';
 const logger = new Logger({
-    serviecName : "api-gateway",
+    serviceName : "api-gateway",
     logLevel : 'DEBUG',
     enableConsole: true,
     enableFile : false
